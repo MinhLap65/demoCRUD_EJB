@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Edit Book</title>
+    </h:head>
+    <h:body>
+        Edit Book
+        <h:form>
+            <p>
+                Book Code <h:inputText value="#{bookBean.book.bookid}"/>
+            </p>
+            <p>
+                Book Name: <h:inputText value="#{bookBean.book.name}"/>
+            </p>
+            <p>
+                Nick Name: <h:inputText value="#{bookBean.book.nickname}"/>
+            </p>
+            <p>
+                NXB: <h:inputText value="#{bookBean.book.nxb}"/>
+            </p>
+            <p>
+                Price: <h:inputText value="#{bookBean.book.price}"/>
+            </p>
+            <h:commandButton action="#{bookBean.update()}" value="Save"/>
+        </h:form>
+    </h:body>
+</html>
+
+
